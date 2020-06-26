@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12">
+                    <div class="material">
+                        <p style="text-align: center;color: azure; margin: 8px;">Calculator</p>
+                        <div>
+                            <input id="display" class="display" type="text" style="font-size: x-large ;">
+                        </div>
+                        <div>
+                            <button class="barbtn" onclick="getNumber('(')"> ( </button>
+                            <button class="barbtn" onclick="getNumber(')')"> ) </button>
+                            <button class="rfunbtn" onclick="getEe()"> E </button>
+                            <button class="clearbtn" onclick="back()"> 🠄 </button>
+                            <button class="clearbtn" onclick="clearDisplay()"> C </button>
+                            <button class="bscbtn" onclick="getNumber('/')"> / </button>
+                        </div>
+                        <div>
+                            <button class="sqrbtn" onclick="getSqrRoot()"> √x </button>
+                            <button class="sqrbtn" onclick="getSqr()"> sqr </button>
+                            <button class="everybtn" onclick="getNumber('7')"> 7 </button>
+                            <button class="everybtn" onclick="getNumber('8')"> 8 </button>
+                            <button class="everybtn" onclick="getNumber('9')"> 9 </button>
+                            <button class="bscbtn" onclick="getNumber('*')"> X </button>
+                        </div>
+                        <div>
+                            <button class="efunbtn" onclick="getSin()"> sin </button>
+                            <button class="efunbtn" onclick="getCos()"> cos </button>
+                            <button class="everybtn" onclick="getNumber('4')"> 4 </button>
+                            <button class="everybtn" onclick="getNumber('5')"> 5 </button>
+                            <button class="everybtn" onclick="getNumber('6')"> 6 </button>
+                            <button class="bscbtn" onclick="getNumber('+')"> + </button>
+                        </div>
+                        <div>
+                            <button class="efunbtn" onclick="getTan()"> tan </button>
+                            <button class="efunbtn" onclick="getLog()"> log </button>
+                            <button class="everybtn" onclick="getNumber('1')"> 1 </button>
+                            <button class="everybtn" onclick="getNumber('2')"> 2 </button>
+                            <button class="everybtn" onclick="getNumber('3')"> 3 </button>
+                            <button class="bscbtn" onclick="getNumber('-')"> - </button>
+                        </div>
+                        <div>
+                            <button class="rfunbtn" onclick="getPie()"> π </button>
+                            <button class="rfunbtn" onclick="getNumber('%')"> % </button>
+                            <button class="everybtn" onclick="getNumber('0')"> 0 </button>
+                            <button class="everybtn" onclick="getNumber('00')"> 00 </button>
+                            <button class="everybtn" onclick="getNumber('.')"> . </button>
+                            <button class="eqlbtn" onclick="getCalc()"> = </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
